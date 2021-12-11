@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="160dp"
+    android:background="@color/white">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:padding="10sp"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/einkaufWagen"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Einkaufszettel"
+        android:textColor="@color/black"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/DimGray"
+        android:textColorHint="@color/gray"
+        />
+    <Button
+        android:id="@+id/b_anlegen"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="50dp"
+        android:text="Anlegen und Weiter"/>
+
+    <Button
+        android:id="@+id/b_recentProduct"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="50dp"
+        android:enabled="false"
+        android:text="bereits gekaufte Produkte"/>
+
+   <!-- <ImageView
+        android:id="@+id/b_delete"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:onClick="deleteMenu"
+        android:src="@mipmap/delete"/>
+
+    <ImageView
+        android:id="@+id/b_update"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:onClick="updateMenu"
+        android:src="@mipmap/update"/>
+    />
+    <ImageView
+        android:id="@+id/b_add"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:onClick="addMenu"
+        android:src="@mipmap/add"/>
+    />
+    <ImageView
+        android:id="@+id/b_edit"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:onClick="editMenu"
+        android:src="@drawable/ic_baseline_edit_24"/>
+    />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/task_row"/>
+
+        <ListView
+            android:id="@+id/userList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            tools:listitem="@layout/task_row" >
+
+
+        </ListView> -->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

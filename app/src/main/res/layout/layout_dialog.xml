@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <AutoCompleteTextView
+        android:id="@+id/product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Banane"
+        android:completionThreshold="1"
+        android:textColorHint="@color/gray"
+        android:backgroundTint="@color/gray"/>
+
+    <EditText
+        android:id="@+id/update_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="5"
+        android:backgroundTint="@color/gray"
+        android:textColorHint="@color/gray"/>
+
+        <Spinner
+            android:id="@+id/update_einheit"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp" />
+    </LinearLayout>
+</RelativeLayout>
